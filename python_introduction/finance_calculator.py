@@ -1,7 +1,7 @@
 # Personal finance calculator for monthly savings
-income = float(input("Enter your monthly income:"))
-expenses = float(input("Enter your total mothly expenses:"))
-savings = income - expenses
-projected_savings = savings * 12 + (savings * 12 * 0.05)
-print("Your monthly savings are $", savings, ".")
+monthly_income = float(input("Enter your monthly income:"))
+monthly_expenses = float(input("Enter your total mothly expenses:"))
+monthly_savings = monthly_income - monthly_expenses
+projected_savings = monthly_savings * 12 + (monthly_savings * 12 * 0.05)
+print("Your monthly savings are $",monthly_ savings, ".")
 print("Projected savings after one year, with interest, is: ","$", projected_savings, ".")
