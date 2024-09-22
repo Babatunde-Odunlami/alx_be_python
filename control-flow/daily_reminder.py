@@ -8,21 +8,21 @@ customised_message2 = "Consider completing it when you have free time."
 match priority:
     case "high":
         if time_bound == "yes":
-            print(f "Reminder: {task} is a {priority} priority task {customised_message}")
+            print(f"Reminder: {task} is a {priority} priority task {customised_message}")
         else:
-            print(f "Note: {task} is a {priority} priority task. {customised_message2}")
+            print(f"Note: {task} is a {priority} priority task. {customised_message2}")
         break;
     case "medium":
         if time_bound == "yes":
-            print(f "Reminder: {task} is a {priority} priority task {customised_message}")
+            print(f"Reminder: {task} is a {priority} priority task {customised_message}")
         else:
-            print(f "Note: {task} is a {priority} priority task. {customised_message2}")
+            print(f"Note: {task} is a {priority} priority task. {customised_message2}")
         break;
     case "low":
         if time_bound == "yes":
-            print(f "Reminder: {task} is a {priority} priority task {customised_message}")
+            print(f"Reminder: {task} is a {priority} priority task {customised_message}")
         else:
-            print(f "Note: {task} is a {priority} priority task. {customised_message2}")
+            print(f"Note: {task} is a {priority} priority task. {customised_message2}")
         break;
     case _:
         print("Please follow the prompt's instructions")
