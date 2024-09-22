@@ -1,8 +1,8 @@
 #A calculator based on used input
 num1 = float(input("Enter the first number:")
 num2 = float(input("Enter the second number:")
-    operand = input("Choose the operation (+, -, *, /):")
-match operand:
+    operation = input("Choose the operation (+, -, *, /):")
+match operation:
     case "*":
         result = num1 * num2
         break;
@@ -19,6 +19,6 @@ match operand:
             print("Cannot divide by zero")
         break;
     case _:
-        print("Please entera valid number")
+        print("Please enter a valid number")
 
 print("The result is ", result)
