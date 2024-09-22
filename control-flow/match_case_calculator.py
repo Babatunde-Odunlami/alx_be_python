@@ -1,7 +1,7 @@
 #A calculator based on used input
 num1 = float(input("Enter the first number:")
 num2 = float(input("Enter the second number:")
-operand = input("what type of operation do you want to perform? (+ / - / * / '/')")
+operand = input("Choose the operation (+ / - / * / '/')")
 match operand:
     case "*":
         result = num1 * num2

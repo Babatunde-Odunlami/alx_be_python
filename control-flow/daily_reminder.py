@@ -1,7 +1,7 @@
 # A reminder about task and priority
-task = input("Enter the task you want to do: ").proper()
-task_priority = input("What is the priority of the task? (high, medium, low)").lower()
-time_bound = input("Is it time bound task? (yes/no)").lower()
+task = input("Enter your task:").proper()
+task_priority = input("Priority (high, medium, low)").lower()
+time_bound = input("Is it time-bound? (yes/no)").lower()
 match time_bound:
     case "yes":
         if task_priority == "high":
