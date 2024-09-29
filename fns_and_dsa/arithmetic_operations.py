@@ -15,11 +15,10 @@ def perform_operation(num1, num2, operation):
     elif operation == "multiply":
         result = num1 * num2
     elif operation == "divide":
-        try:
-            float(num2) != 0
-        except:
+        if num2==0:
             print("enter valid numbers as arguments")
-        result = num1 / num2
+        else:
+            result = num1 / num2
     else:
         print("please enter a valid operation")
     print(f"Result: {result}")
