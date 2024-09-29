@@ -9,8 +9,8 @@ def convert_to_celsius(fahrenheit):
     try:
         CELSIUS = (fahrenheit - 32) * FAHRENHEIT_TO_CELSIUS_FACTOR
     except:
-        print("Invalid temperature. Please enter a numeric value.")
-    print(f"{fahrenheit}°F is {CELSIUS}°C")
+        return "Invalid temperature. Please enter a numeric value."
+    return f"{fahrenheit}°F is {CELSIUS}°C"
 
 
 def convert_to_fahrenheit(celsius):
@@ -19,12 +19,12 @@ def convert_to_fahrenheit(celsius):
     try:
         FAHRENHEIT = (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + 32
     except:
-        print("Invalid temperature. Please enter a numeric value.")
-    print(f"{celsius}°C is {FAHRENHEIT}°F")
+        return "Invalid temperature. Please enter a numeric value."
+    return f"{celsius}°C is {FAHRENHEIT}°F"
 
 
 temp = int(input("Enter the temperature to convert: "))
-choice = input("Is this temperature in Celsius or Fahrenheit? (C/F)").strip().upper()
+choice = input("Is this temperature in Celsius or Fahrenheit? (C/F):").strip().upper()
 if choice == "C":
     temp = celsius
     convert_to_fahrenheit(celsius)
