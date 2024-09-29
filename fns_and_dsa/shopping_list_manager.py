@@ -16,11 +16,11 @@ def main():
         choice = input("Enter your choice: ")
 
         if choice == "1":
-            item = input("Enter the item to add").strip().lower()
+            item = input("Enter the item to add: ").strip().lower()
             shopping_list.append(item)
             pass
         elif choice == "2":
-            item = input("Enter the item to remove").strip().lower()
+            item = input("Enter the item to remove: ").strip().lower()
             shopping_list.remove(item)
             pass
         elif choice == "3":
