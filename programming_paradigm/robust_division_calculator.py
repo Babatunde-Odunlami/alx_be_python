@@ -6,8 +6,10 @@ def safe_divide(numerator, denominator):
                 answer =int(numerator)/int(denominator)
                 return f"The result of the division is {answer:.1f}"
             else:
-                raise ZeroDivisionError("Error: Cannot divide by zero.")
+                return f"Error: Cannot divide by zero."
+                # raise ZeroDivisionError("Error: Cannot divide by zero.")
         else:
-            raise ValueError("Error: Please enter numeric values only.")
+            return f"Error: Cannot divide by zero."
+            #raise ValueError("Error: Please enter numeric values only.")
     except ValueError:
         return f"Error: Please enter numeric values only."
