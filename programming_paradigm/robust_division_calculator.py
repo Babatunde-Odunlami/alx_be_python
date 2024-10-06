@@ -2,8 +2,8 @@
 def safe_divide(numerator, denominator):
     try:
         if numerator.isnumeric() and float(numerator) and denominator.isnumeric() and float(denominator):
-            if float(numerator) and float(denominator) and denominator != 0:
-                answer = numerator/denominator
+            if denominator != 0:
+                answer =int(numerator)/int(denominator)
                 return f"The result of the division is {answer:.1f}"
             else:
                 raise ZeroDivisionError("Error: Cannot divide by zero.")
