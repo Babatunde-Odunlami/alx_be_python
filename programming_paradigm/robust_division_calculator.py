@@ -1,8 +1,8 @@
 #OOP concepts: creating a robust division calculator
 def safe_divide(numerator, denominator):
     try:
-        if float(numerator).isnumeric() and float(denominator).isnumeric():
-            if denominator != 0:
+        if numerator.isnumeric() and denominator.isnumeric():
+            if float(denominator) != 0 and float(numerator):
                 answer = numerator/denominator
                 return f"The result of the division is {answer:.1f}"
             else:
