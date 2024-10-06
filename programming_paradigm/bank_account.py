@@ -7,7 +7,7 @@ class BankAccount:
         '''deposit function checking input for negative values'''
         if amount>=0:
             self.account_balance += amount
-            print(f"Deposited: ${deposit}")
+            print(f"Deposited: ${amount}")
         else:
             print(f"Deposit amount must be positive")
 
