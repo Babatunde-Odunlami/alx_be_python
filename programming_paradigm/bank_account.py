@@ -5,9 +5,8 @@ class BankAccount:
 
     def deposit(self, amount):
         '''deposit function checking input for negative values'''
-        if amount>=0:
+        if amount>=0: 
             self.account_balance += amount
-            print(f"Deposited: ${amount}")
         else:
             print(f"Deposit amount must be positive")
 
@@ -16,10 +15,10 @@ class BankAccount:
         if amount >= 0:
             if amount <= self.account_balance:
                 self.account_balance -= amount
-                print(f"withdraw: ${amount}")
+               # print(f"withdraw: ${amount}")
                 return True
             else:
-                print("Insufficient funds")
+                #print("Insufficient funds")
                 return False
         else:
             print(f"Withdraw amount must be positive")
